@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+
+    <form action="http://www.blackgoosebistro.com/pizza.php" method="post">
+      <div style="margin-left: 15px;">
+        <h2>Black Goose Bistro | Pizza-on-Demand</h2>
+        <p>
+          Our 12" wood-fired pizzas are available for delivery. Build your <br>
+          custom pizza and we'll deliver it within an hour.
+        </p>
+      </div>
+      
+      <fieldset style="border: 0;">
+        <legend>Your Information</legend>
+        
+          <div>
+            <label for="name">Name: </label>
+            <input id="name" name="customername" type="text" required>
+          </div>
+
+        <br>
+
+        <div>
+          <label for="address">Address: </label>
+          <input id="address" name="address" type="text" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="telephone-number">Telephone Number: </label>
+          <input id="telephone-number" name="telephone" type="number" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="email">Email: </label>
+          <input id="email" name="email" type="email" required>
+        </div>
+
+        <br>
+
+        <div>
+          <label for="delivery-instruction">Delivery Instruction:</label><br><br>
+          <textarea id="delivery-instruction" name="instructions" rows="4" cols="60" maxlength="400" placeholder="No More than 400 Characters Long!" maxlength="400" required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset style="border: 0;">
+        <legend><b>Design Your Dream Pizza: </b> <br> Pizza Specs</legend>
+        
+        <div title="container-crust">
+          <h4 style="font-weight: normal;">Crust (Choose One): </h4>
+          <input type="radio" name="crust" required>
+          <label>Classic White</label> <br>
+
+          <input type="radio" name="crust" required>
+          <label>Multigrain</label> <br>
+          
+          <input type="radio" name="crust" required>
+          <label>Cheese-stuffed crust</label> <br> 
+          
+          <input type="radio" name="crust" required>
+          <label>Gluten-free</label>
+        </div> <!-- container-crust -->
+
+        <div title="container-topping">
+          <h4 style="font-weight: normal;">Toppings (Choose as many as you want):</h4>
+          <div>
+            <input type="checkbox" checked>
+            <label for="">Red Sauce</label><br>
+
+            <input type="checkbox">
+            <label for="">White Sauce</label><br>
+            
+            <input type="checkbox">
+            <label for="">Mozzarella Cheese</label><br>
+            
+            <input type="checkbox">
+            <label for="">Pepperoni</label><br>
+            
+            <input type="checkbox">
+            <label for="whiteyyy-sauce">Mushrooms</label<br>
+            
+            <input type="checkbox">
+            <label for="" >Pappers</label><br>
+            
+            <input type="checkbox">
+            <label for="">Anchovies</label>
+          </div>
+        </div> <!-- container-topping -->
+      </fieldset>
+
+      <div style="margin: 15px;">
+        <label for="pizzas">Number <br> How Many Pizzas: </label>
+        <select name="pizzas">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Bring me a pizza!">
+      <input type="reset" value="Reset">
+
+      <br>
+    </form>
+  </body>
+</html>
