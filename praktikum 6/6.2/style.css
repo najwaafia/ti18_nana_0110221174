@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+}
+
+nav {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(255, 163, 163);
+}
+
+.main {
+    flex: 9;
+}
+
+header {
+    background-color: rgb(146, 209, 156);
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    height: 500px;
+}
+
+article {
+    flex: 3;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(223, 161, 212);
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(164, 175, 236);
+}

@@ -1,0 +1,12 @@
+.container{
+    display: flex;
+    background: rgb(243, 144, 144);
+    padding: 2rem;
+}
+
+.item{
+    background: rgb(194, 153, 202);
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+}
