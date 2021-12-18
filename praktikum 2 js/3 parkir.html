@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitung Biaya Parkir</title>
+
+    <script>
+      const checkprice = () => {
+        const jam_open = parseFloat(document.getElementById("jam_open").value);
+        const jam_exit = parseFloat(document.getElementById("jam_exit").value);
+        let totalbiaya = document.getElementById("biaya");
+
+        if (isNaN(jam_open) || isNaN(jam_exit)) {
+          return;
+        }
+
+        if (jam_exit < jam_open) {
+          alert("Jam keluar tidak boleh kecil dari pada jam masuk");
+          document.getElementById("jam_open").value = "";
+          document.getElementById("jam_exit").value = "";
+          return;
+        }
+
+        let biaya;
+        const selisih = jam_exit - jam_open;
+        const lebihjam = selisih - 2;
+        if (selisih <= 2 && lebihjam < 0) {
+          biaya = 3000;
+          totalbiaya.value = biaya;
+          return;
+        }
+        biaya = 3000 + lebihjam * 1000;
+        totalbiaya.value = biaya;
+        return;
+      };
+    </script>
+  </head>
+
+  <body>
+    <div style="padding: 10px">
+      <input
+        type="number"
+        id="jam_open"
+        placeholder="Masukan Jam Masuk"
+        onchange="checkprice()"
+        style="margin-bottom: 10px"
+      />
+      <br />
+      <input
+        type="number"
+        id="jam_exit"
+        placeholder="Masukan Jam Keluar"
+        onchange="checkprice()"
+      />
+      <br />
+      = <br />
+      <input type="number" id="biaya" disabled />
+    </div>
+  </body>
+</html>

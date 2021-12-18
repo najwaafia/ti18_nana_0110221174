@@ -14,7 +14,14 @@
 
         <table style="width: 100%">
           <tr>
-            <td>Mata Uang Asing</td>
+            <td><label for="nilai">Jumlah Uang Asing</label></td>
+            <td>
+              <input type="text" name="nilai" placeholder="Nilai Uang Asing" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>Jenis Mata Uang</td>
             <td>
               <select name="uangasing" onchange="konversiuang()">
                 <option disabled selected value="pilih">
@@ -31,14 +38,7 @@
           </tr>
 
           <tr>
-            <td><label for="nilai">Nilai</label></td>
-            <td>
-              <input type="text" name="nilai" placeholder="Mata Uang Asing" />
-            </td>
-          </tr>
-
-          <tr>
-            <td><label for="kurs">Hasil Kurs</label></td>
+            <td><label for="kurs">Nilai dalam Rupiah</label></td>
             <td>
               <input type="text" name="kurs" placeholder="Hasil Dikonversi" />
             </td>
